@@ -17,7 +17,10 @@
 				<td> Bridge Cafe </td>
 				<td>Cold Latte</td>
 				<td> 2015-04-07</td>
-				<td> <a href="/collectorder">Read for collection</a> </td>
+				<td>
+					<a href="/collectorder" ng-show="!successCollection ">Read for collection</a>
+					<span ng-show="successCollection ">Collected!</span>
+				</td>
 			</tr>
 			<tr ng-repeat="order in orderList">
 				<td> {{ order.shop_name }} </td>

@@ -2,7 +2,73 @@
 
 <div class="row">
 	<div class="col-md-12">
-		 <input type="file" accept="image/*" capture="camera" />
+		<center>
+			<br  /><br />
+			<div ng-show="showSuccessMsg">
+				<img src="../../assets/images/QRCode.svg" ng-click=captureImg()  width="200px">
+				<br />
+				<span>Cold cafe latter has been successfully claimed!</span>
+			</div>
+			<div ng-hide="showSuccessMsg">
+				<span>Please tap on the image to caputure the QR code and claim for your drink</span>
+				<br /> <br />
+				<div>
+					<img src="../../assets/images/capture.svg" ng-click=captureImg()  width="200px">
+
+					<br />
+					<div ng-show="showCircular" >
+						<div class="preloader-wrapper small active" style="margin-left: 10px; ">
+							<div class="spinner-layer spinner-blue">
+								<div class="circle-clipper left">
+									<div class="circle"></div>
+								</div>
+								<div class="gap-patch">
+									<div class="circle"></div>
+								</div>
+								<div class="circle-clipper right">
+									<div class="circle"></div>
+								</div>
+							</div>
+							<div class="spinner-layer spinner-red">
+								<div class="circle-clipper left">
+									<div class="circle"></div>
+								</div>
+								<div class="gap-patch">
+									<div class="circle"></div>
+								</div>
+								<div class="circle-clipper right">
+									<div class="circle"></div>
+								</div>
+							</div>
+							<div class="spinner-layer spinner-yellow">
+								<div class="circle-clipper left">
+									<div class="circle"></div>
+								</div>
+								<div class="gap-patch">
+									<div class="circle"></div>
+								</div>
+								<div class="circle-clipper right">
+									<div class="circle"></div>
+								</div>
+							</div>
+							<div class="spinner-layer spinner-green">
+								<div class="circle-clipper left">
+									<div class="circle"></div>
+								</div>
+								<div class="gap-patch">
+									<div class="circle"></div>
+								</div>
+								<div class="circle-clipper right">
+									<div class="circle"></div>
+								</div>
+							</div>
+						</div>
+						<br />
+						<span>loading...</span>
+					</div>
+				</div>
+			</div>
+		</center>
 	</div>
 </div>
 
